@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    width: fit-content;
+    height: fit-content;
+}
+
+.nav-bar-container div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-bar-container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 10px;
+    background-color: white;
+    font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    box-shadow: 0 0 10px 0 #ddd;
+}
+
+.search-bar{
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.search-form {
+    display: flex;
+    border: 2px black;
+    padding: 10px;
+}
+
+.search-icon {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.categories{
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color: #1c1d1f;
+    font-size: 14px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.teach{
+    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.hover-change{
+    color: #1c1d1f;
+}
+
+.hover-change:hover{
+    color: #5624d0;
+}
+
+.shopping-cart{
+    margin: 12px 0px;
+    padding: 10px;
+}
+
+.medium-button{
+    padding: 10px;
+    height: 4rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.login-button{
+    background-color: white;
+}
+
+.login-button:hover, .lang:hover{
+    background-color: #ddd;
+}
+
+.signup-button{
+    background-color: #1c1d1f;
+}
+
+.signup-button:hover{
+    background-color: black;
+}
+
+
+.login-text{
+    color: #1c1d1f;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.signup-text{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.lang{
+    padding: 10px;
+    background-color: white;
+}
+
+.small-screen{
+    display: none;
+}
+
+.udemy-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.logo{
+    width:91px;
+    height:34px;
+}
+
+@media only screen and (max-width: 1100px){
+    .big-screen{
+        display: none;
+    }
+    .nav-bar-container{
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        padding: 0;
+        height: 50%;
+    }
+
+    .search-and-shop{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .small-screen{
+        display: block;
+        display: flex;
+    }
+    .logo{
+        width: 75px;
+        height: 28px;
+    }
+    .abc{
+        display: inline;
+    }
+}
+
