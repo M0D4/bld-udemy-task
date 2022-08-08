@@ -133,7 +133,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
 }
 
 .logo{
@@ -161,6 +160,9 @@ a{
     .small-screen{
         display: block;
         display: flex;
+    }
+    .udemy-logo{
+        flex: 1;
     }
     .logo{
         width: 75px;
