@@ -61,8 +61,8 @@ button {
 
 a {
     text-decoration: none;
+    color: black;
 }
-
 
 .teach {
     font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
@@ -210,6 +210,7 @@ a {
     font-size: 23px;
 }
 
+
 .courses-container {
     display: block;
     border: 1px solid black;
@@ -238,6 +239,41 @@ a {
 .explore-button {
     margin-top: 10px;
     margin-left: -5px;
+}
+
+.course-card-container {
+    display: flex;
+    max-width: 100%;
+    /* align-content: space-around; */
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.course-card {
+    cursor: pointer;
+    margin-left: -10px;
+
+    max-width: 20%;
+}
+
+.instructors {
+    font-weight: normal;
+}
+
+.course-title h3 {
+    font-weight: bold;
+    font-size: 15px;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.python-course-image {
+    width: 240px;
+    height: 135px;
+}
+
+.course-price h3 {
+    font-size: 5px;
 }
 
 @media only screen and (max-width: 1100px) {
