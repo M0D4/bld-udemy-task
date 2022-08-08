@@ -17,7 +17,7 @@ button{
 .nav-bar-container {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 80px;
     padding: 0 10px;
     background-color: white;
     font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
@@ -80,13 +80,11 @@ a{
 }
 
 .shopping-cart{
-    margin: 12px 0px;
     padding: 10px;
 }
 
 .medium-button{
     padding: 10px;
-    height: 4rem;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -121,7 +119,6 @@ a{
 }
 
 .lang{
-    padding: 10px;
     background-color: white;
 }
 
@@ -140,6 +137,13 @@ a{
     height:34px;
 }
 
+.buttons{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+
 @media only screen and (max-width: 1100px){
     .big-screen{
         display: none;
@@ -149,19 +153,20 @@ a{
         align-items: center;
         flex: 1;
         padding: 0;
-        height: 50%;
+        height: 50px;
     }
 
-    .search-and-shop{
-        display: flex;
+    .search-and-shop div{
+        display: inline;
         align-items: center;
-        justify-content: flex-end;
+        margin-right: 0;
     }
     .small-screen{
         display: block;
         display: flex;
     }
     .udemy-logo{
+        display: flex;
         flex: 1;
     }
     .logo{
@@ -170,6 +175,7 @@ a{
     }
     .abc{
         display: inline;
+        margin-right: 0;
     }
 }
 
