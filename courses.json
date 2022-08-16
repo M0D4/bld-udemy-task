@@ -1,0 +1,60 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "title": "python from zero to hero",
+            "author": "maximlian",
+            "image": "https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
+            "price": "E£269.99"
+        },
+        {
+            "id": 2,
+            "title": "Learning Python for Data Analysis and Visualization",
+            "author": "Jose Portilla",
+            "image": "https://img-b.udemycdn.com/course/240x135/396876_cc92_7.jpg",
+            "price": "E£319.99"
+        },
+        {
+            "id": 3,
+            "title": "Javascript from zero to hero",
+            "author": "Tech Learning Network",
+            "image": "https://img-b.udemycdn.com/course/240x135/63612_8797_4.jpg",
+            "price": "E£199.99"
+        },
+        {
+            "id": 4,
+            "title": "Javascript for Beginners",
+            "author": "Tech Learning Network",
+            "image": "https://img-b.udemycdn.com/course/240x135/8324_fa84_13.jpg",
+            "price": "E£199.99"
+        },
+        {
+            "id": 5,
+            "title": "Microsoft Excel 2013 Course Beginners/ Intermediate Training",
+            "author": "Infinite Skills",
+            "image": "https://img-b.udemycdn.com/course/240x135/31535_e351_7.jpg",
+            "price": "E£296.99"
+        },
+        {
+            "id": 6,
+            "title": "Microsoft Excel 2013 Advanced. Online Excel Training Course",
+            "author": "Infinite Skills",
+            "image": "https://img-b.udemycdn.com/course/240x135/39292_b3f3_9.jpg",
+            "price": "E£296.99"
+        },
+        {
+            "id": 7,
+            "title": "The Complete 2022 Web Development Course - Build 15 Projects",
+            "author": "Development Island (UK)",
+            "image": "https://img-b.udemycdn.com/course/240x135/548278_b005_9.jpg",
+            "price": "E£319.99"
+        },
+        {
+            "id": 8,
+            "title": "The Web Developer Bootcamp 2022",
+            "author": "Colt Steele",
+            "image": "https://img-b.udemycdn.com/course/240x135/625204_436a_3.jpg",
+            "price": "E£269.99"
+        }
+    ]
+}
