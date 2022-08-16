@@ -26,7 +26,6 @@ let apiPromise = getCoursesFromApi('http://localhost:3000/courses/');
 let coursesContainer = document.querySelector(".course-card-container");
 for (let course of coursesContainer.querySelectorAll(".course-card")) {
     coursesContainer.removeChild(course);
-    // coursesContainer.appendChild(course);
 }
 coursesContainer = document.querySelector(".course-card-container");
 console.log(coursesContainer);
@@ -60,15 +59,6 @@ function addCourseDiv(course) {
     courseCard.appendChild(price);
     price.classList.add("course-price");
     price.textContent = course["price"];
-    // <div class="course-card">
-    //     <img class="python-course-image" alt="Python Course"
-    //         src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" />
-    //     <a href="#" class="course-title">
-    //         <h3>Learn Python: The Complete Python Programming Course</h3>
-    //     </a>
-    //     <h5 class="instructors">Avinash Jain, The Codex</h5>
-    //     <h4 class="course-price">E£679.99</h4>
-    // </div>
 }
 
 apiPromise.then((data) => {
@@ -83,7 +73,6 @@ function getCourses() {
     coursesContainer = document.querySelector(".course-card-container");
     for (let course of coursesContainer.querySelectorAll(".course-card")) {
         coursesContainer.removeChild(course);
-        // coursesContainer.appendChild(course);
     }
     let searchText = document.querySelector(".search-text").value.trim();
     coursesContainer = document.querySelector(".course-card-container");
