@@ -1,9 +1,10 @@
 let searchIcons = document.querySelectorAll(".search-icon");
+let category = '';
 
 for (let icon of searchIcons) {
     icon.addEventListener("click", (event) => {
         event.preventDefault();
-        getCourses();
+        getCourses(category);
     });
 }
 
@@ -28,7 +29,6 @@ for (let course of coursesContainer.querySelectorAll(".course-card")) {
     coursesContainer.removeChild(course);
 }
 coursesContainer = document.querySelector(".course-card-container");
-console.log(coursesContainer);
 
 function addCourseDiv(course) {
     coursesContainer = document.querySelector(".course-card-container");
@@ -61,15 +61,13 @@ function addCourseDiv(course) {
     price.textContent = course["price"];
 }
 
-apiPromise.then((data) => {
-    for (let course of data) {
-        addCourseDiv(course);
-    }
-});
+// apiPromise.then((data) => {
+//     for (let course of data) {
+//         addCourseDiv(course);
+//     }
+// });
 
-
-
-function getCourses() {
+function getCourses(category) {
     coursesContainer = document.querySelector(".course-card-container");
     for (let course of coursesContainer.querySelectorAll(".course-card")) {
         coursesContainer.removeChild(course);
@@ -78,8 +76,29 @@ function getCourses() {
     coursesContainer = document.querySelector(".course-card-container");
     apiPromise.then((data) => {
         for (let course of data) {
-            if (searchText === "" || course["title"].toLowerCase().indexOf(searchText.toLowerCase()) != -1)
+            if ((course["title"].toLowerCase().indexOf(category.toLowerCase()) != -1 &&
+                course["title"].toLowerCase().indexOf(searchText.toLowerCase()) != -1))
                 addCourseDiv(course);
         }
     });
 }
+
+let categoryButtons = document.querySelectorAll(".category-button");
+let exploreButton = document.querySelector(".explore-button");
+
+for (let i = 0; i < categoryButtons.length; ++i) {
+    let button = categoryButtons[i];
+    button.addEventListener("click", (event) => {
+        event.preventDefault();
+        getCourses(button.innerHTML);
+        exploreButton.innerHTML = "Explore " + button.innerHTML;
+        category = button.innerHTML;
+        button.setAttribute("style", "color:black");
+        for (let j = 0; j < categoryButtons.length; ++j) {
+            if (i == j) continue;
+            categoryButtons[j].setAttribute("style", "color:#6a6f73");
+        }
+    });
+}
+
+categoryButtons[0].click();

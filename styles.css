@@ -282,6 +282,21 @@ a {
     width: 100%;
 }
 
+.categories-tab {
+    display: flex;
+}
+
+.categories-tab button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: large;
+    color: #6a6f73;
+    padding: 8px 4px;
+}
+
 @media only screen and (max-width: 1080px) {
     .udemy-business {
         display: none;
