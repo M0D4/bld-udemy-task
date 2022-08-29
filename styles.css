@@ -147,7 +147,7 @@ a {
     justify-content: flex-end;
 }
 
-.sec-1 {
+.section-1 {
     display: flex;
     margin: 10px 10px;
     position: relative;
@@ -181,7 +181,7 @@ a {
     margin-bottom: 10px;
 }
 
-.sec-2 {
+.courses-section {
     display: flex;
     margin: 10px 10px;
     display: block;
@@ -197,17 +197,17 @@ a {
     flex-direction: column;
 }
 
-.sec-2 div {
+.courses-section div {
     /* flex: 1; */
     margin: 10px 10px;
     width: 100%;
 }
 
-.sec-2 h1 {
+.courses-section h1 {
     font-size: 40px;
 }
 
-.sec-2 h3 {
+.courses-section h3 {
     font-weight: normal;
     font-size: 23px;
 }
@@ -297,6 +297,11 @@ a {
     padding: 8px 4px;
 }
 
+.fa-globe,
+.fa {
+    font-size: 23px !important;
+}
+
 @media only screen and (max-width: 1080px) {
     .udemy-business {
         display: none;
@@ -348,7 +353,7 @@ a {
         height: 50%;
     }
 
-    .sec-1 {
+    .section-1 {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
@@ -366,7 +371,7 @@ a {
         font-size: 23px;
     }
 
-    .sec-2 {
+    .courses-section {
         /* margin: 10px 10px; */
         position: relative;
         margin-left: 3px;
@@ -394,11 +399,11 @@ a {
         font-size: 17px;
     }
 
-    .sec-2 h1 {
+    .courses-section h1 {
         font-size: 25px;
     }
 
-    .sec-2 h3 {
+    .courses-section h3 {
         font-size: 18px;
     }
 
