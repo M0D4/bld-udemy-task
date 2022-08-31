@@ -262,7 +262,6 @@ h2-text {}
 .course-card {
     cursor: pointer;
     margin-left: -10px;
-    margin-right: 70px;
     width: 27% !important;
 }
 
@@ -458,7 +457,8 @@ h2-text {}
     }
 
     .course-card {
-        width: 21% !important;
+        width: 24% !important;
+        margin-right: 50px;
     }
 
     .course-card-container {
