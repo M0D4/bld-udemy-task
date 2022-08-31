@@ -199,9 +199,16 @@ a {
 
 .courses-section div {
     /* flex: 1; */
-    margin: 10px 10px;
+    margin-left: 5px;
+    margin-top: 10px;
     width: 100%;
 }
+
+.courses-section-header,
+courses-section-header-description,
+categories-tab,
+courses-container,
+h2-text {}
 
 .courses-section h1 {
     font-size: 40px;
@@ -214,13 +221,14 @@ a {
 
 
 .courses-container {
-    display: block;
+    display: flex;
     border: 1px solid black;
     padding: 15px;
     margin: 20px 20px;
     margin-bottom: 20px;
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: 100% !important;
 }
 
 .h2-text {
@@ -254,7 +262,7 @@ a {
 .course-card {
     cursor: pointer;
     margin-left: -10px;
-
+    margin-right: 70px;
     max-width: 20%;
 }
 
@@ -284,6 +292,8 @@ a {
 
 .categories-tab {
     display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .categories-tab button {
@@ -292,7 +302,6 @@ a {
     cursor: pointer;
     margin-right: 20px;
     font-weight: bold;
-    font-size: large;
     color: #6a6f73;
     padding: 8px 4px;
 }
@@ -300,6 +309,40 @@ a {
 .fa-globe,
 .fa {
     font-size: 23px !important;
+}
+
+.course-card-container {
+    margin-left: -5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .course-card {
+        width: 10%;
+    }
+
+    /* .course-title {
+        display: block;
+    } */
+
+    .course-title h3 {
+        width: 33%;
+    }
+
+    .course-card h4 {
+        width: 33%;
+    }
+
+    .course-card h5 {
+        width: 33%;
+    }
+
+    .course-card {
+        width: 33%;
+    }
+
+    .course-card-container {
+        margin-left: -5px;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -412,7 +455,7 @@ a {
     }
 
     .course-card-container {
-        width: fit-content;
+        /* width: fit-content; */
         height: fit-content;
         position: relative;
         /* justify-content: flex-start; */

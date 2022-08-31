@@ -76,7 +76,7 @@ function getCourses(category) {
     coursesContainer = document.querySelector(".course-card-container");
     apiPromise.then((data) => {
         for (let course of data) {
-            if ((course["title"].toLowerCase().indexOf(category.toLowerCase()) != -1 &&
+            if ((course["category"].toLowerCase().indexOf(category.toLowerCase()) != -1 &&
                 course["title"].toLowerCase().indexOf(searchText.toLowerCase()) != -1))
                 addCourseDiv(course);
         }
