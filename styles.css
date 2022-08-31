@@ -184,13 +184,13 @@ a {
 .courses-section {
     display: flex;
     margin: 10px 10px;
-    display: block;
+    /* display: block; */
     position: relative;
     flex-wrap: wrap;
     margin-left: 50px;
     margin-bottom: 40px;
     height: 100%;
-    width: 90%;
+    width: 95%;
     padding: 0 10px;
     background-color: white;
     justify-content: flex-start;
@@ -263,7 +263,7 @@ h2-text {}
     cursor: pointer;
     margin-left: -10px;
     margin-right: 70px;
-    max-width: 20%;
+    width: 27% !important;
 }
 
 .instructors {
@@ -278,7 +278,7 @@ h2-text {}
 }
 
 .course-image {
-    width: 240px;
+    width: 90%;
     height: 135px;
 }
 
@@ -315,43 +315,20 @@ h2-text {}
     margin-left: -5px;
 }
 
-@media only screen and (max-width: 768px) {
-    .course-card {
-        width: 10%;
-    }
-
-    /* .course-title {
-        display: block;
-    } */
-
-    .course-title h3 {
-        width: 33%;
-    }
-
-    .course-card h4 {
-        width: 33%;
-    }
-
-    .course-card h5 {
-        width: 33%;
-    }
-
-    .course-card {
-        width: 33%;
-    }
-
-    .course-card-container {
-        margin-left: -5px;
-    }
-}
-
 @media only screen and (max-width: 1080px) {
     .udemy-business {
         display: none;
     }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /*Tablet screen*/
+
+
+    /* .course-title {
+    display: block;
+} */
     .big-screen {
         display: none;
     }
@@ -384,11 +361,6 @@ h2-text {}
     .logo {
         width: 75px;
         height: 28px;
-    }
-
-    .abc {
-        display: inline;
-        margin-right: 0;
     }
 
     .alarm {
@@ -455,7 +427,161 @@ h2-text {}
     }
 
     .course-card-container {
-        /* width: fit-content; */
+        width: 100%;
+        height: fit-content;
+        position: relative;
+        /* justify-content: flex-start; */
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    /* .course-card {
+        margin-right: 10px;
+        width: 95% !important;
+        height: 100%;
+    } */
+
+    /* .course-image {
+        width: 100%;
+    } */
+
+    .course-title h3 {
+        width: 100%;
+    }
+
+    .course-card h4 {
+        width: 100%;
+    }
+
+    .course-card h5 {
+        width: 100%;
+    }
+
+    .course-card {
+        width: 21% !important;
+    }
+
+    .course-card-container {
+        margin-left: -5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .course-image {
+        width: 100%;
+    }
+
+    .courses-section {
+        margin-left: 5px;
+    }
+
+    .big-screen {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .big-screen {
+        display: none;
+    }
+
+    .nav-bar-container {
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+        padding: 0;
+        height: 50px;
+    }
+
+    .search-and-shop div {
+        display: inline;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .small-screen {
+        display: block;
+        display: flex;
+    }
+
+    .udemy-logo {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .logo {
+        width: 75px;
+        height: 28px;
+    }
+
+    .alarm {
+        width: 100%;
+        height: 50%;
+    }
+
+    .section-1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .text-card {
+        width: 100%;
+        height: 150px;
+        position: relative;
+    }
+
+    .text-card h1 {
+        font-size: 23px;
+    }
+
+    .courses-section {
+        /* margin: 10px 10px; */
+        position: relative;
+        margin-left: 3px;
+        margin-bottom: 40px;
+        height: 100%;
+        width: 90%;
+        padding: 0 10px;
+        background-color: white;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .courses-container {
+        padding: 10px;
+        margin: 10px 10px;
+        margin-bottom: 20px;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .h2-text h2 {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .courses-section h1 {
+        font-size: 25px;
+    }
+
+    .courses-section h3 {
+        font-size: 18px;
+    }
+
+    .course-title h3 {
+        font-size: 15px;
+    }
+
+    .course-card-container {
+        width: 100%;
         height: fit-content;
         position: relative;
         /* justify-content: flex-start; */
@@ -465,7 +591,11 @@ h2-text {}
 
     .course-card {
         margin-right: 10px;
-        max-width: 100%;
+        width: 95% !important;
         height: 100%;
+    }
+
+    .course-image {
+        width: 100%;
     }
 }
