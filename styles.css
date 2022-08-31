@@ -257,11 +257,12 @@ h2-text {}
     /* align-content: space-around; */
     flex-wrap: wrap;
     flex-direction: row;
+    margin-left: -5px !important;
 }
 
 .course-card {
     cursor: pointer;
-    margin-left: -10px;
+    margin-left: -5px;
     width: 27% !important;
 }
 
